@@ -1,0 +1,41 @@
+{
+  "week_of": "2026-06-15",
+  "issue": 1,
+  "picks": [
+    {
+      "title": "Example: Picasso for Asia — A Conversation",
+      "venue": "M+, West Kowloon",
+      "dates": "Through 13 July",
+      "url": "https://www.mplus.org.hk/",
+      "blurb": "Replace this with your real pick. The blurb is one sentence: what it is, and the judgment only you would make about it."
+    },
+    {
+      "title": "Example: Breathing Space",
+      "venue": "Tai Kwun, Central",
+      "dates": "Opens Friday",
+      "url": "https://www.taikwun.hk/",
+      "blurb": "Second pick. Edit this file weekly in the GitHub web editor — ten minutes, phone is fine."
+    },
+    {
+      "title": "Example: Freespace Jazz Series",
+      "venue": "West Kowloon",
+      "dates": "Saturday, 8pm",
+      "url": "https://www.westkowloon.hk/",
+      "blurb": "Third pick. Pull candidates from data/shortlist.json; keep, rewrite, or ignore the machine's drafts."
+    }
+  ],
+  "more": [
+    {
+      "title": "Example: Hidden Door — open studio weekend",
+      "venue": "Wong Chuk Hang",
+      "dates": "Sat–Sun",
+      "url": "https://example.com"
+    },
+    {
+      "title": "Example: Freespace late-night programme",
+      "venue": "West Kowloon",
+      "dates": "Friday",
+      "url": "https://example.com"
+    }
+  ]
+}

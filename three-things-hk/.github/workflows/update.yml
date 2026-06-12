@@ -1,0 +1,38 @@
+name: Weekly fetch & curate
+
+on:
+  schedule:
+    # Every Monday 02:00 UTC = 10:00 HKT — shortlist ready with your morning coffee
+    - cron: "0 2 * * 1"
+  workflow_dispatch: {}   # manual run button in the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Fetch events
+        run: python scripts/fetch.py
+
+      - name: Curate shortlist
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/curate.py
+
+      - name: Commit results
+        run: |
+          git config user.name "three-things-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Weekly shortlist $(date -u +%F)"
+          git push

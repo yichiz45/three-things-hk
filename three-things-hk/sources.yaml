@@ -1,0 +1,36 @@
+# Event sources. Three types:
+#   jsonld — pages embedding schema.org Event data in <script type="application/ld+json">
+#   ics    — calendar subscription feeds
+#   rss    — news/event RSS feeds (parsed loosely, title + link + date)
+#
+# Start small. Add a source only after the first three run cleanly.
+
+sources:
+  - name: M+
+    type: jsonld
+    url: https://www.mplus.org.hk/en/exhibitions/
+    venue: "M+, West Kowloon"
+
+  - name: Tai Kwun
+    type: jsonld
+    url: https://www.taikwun.hk/en/programme
+    venue: "Tai Kwun, Central"
+
+  - name: West Kowloon Cultural District
+    type: jsonld
+    url: https://www.westkowloon.hk/en/whats-on
+    venue: "West Kowloon"
+
+  # --- Next wave (uncomment once core three are stable) ---
+  # - name: Hong Kong Arts Centre
+  #   type: rss
+  #   url: https://hkac.org.hk/feed/
+  #   venue: "HKAC, Wan Chai"
+  # - name: Hong Kong Palace Museum
+  #   type: jsonld
+  #   url: https://www.hkpm.org.hk/en/visit/exhibitions
+  #   venue: "HKPM, West Kowloon"
+  # - name: Asia Society Hong Kong
+  #   type: jsonld
+  #   url: https://asiasociety.org/hong-kong/events
+  #   venue: "Asia Society, Admiralty"
