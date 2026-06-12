@@ -151,6 +151,58 @@ def fetch_taikwun(source):
     return events
 
 
+def fetch_hkpm(source):
+    """HKPM embeds event data as `eventData['<cat>'] = [...]` in an inline script."""
+    resp = requests.get(source["url"], headers=HEADERS, timeout=TIMEOUT)
+    resp.raise_for_status()
+    events = []
+    for match in re.finditer(r"eventData\[['\"]\w+['\"]\]\s*=\s*(\[.*?\]);", resp.text):
+        try:
+            items = json.loads(match.group(1))
+        except json.JSONDecodeError:
+            continue
+        for item in items:
+            title = item.get("title")
+            if not title:
+                continue
+            events.append({
+                "title": title.strip(),
+                "url": item.get("url") or source["url"],
+                "start": item.get("start", ""),
+                "end": item.get("end", ""),
+                "description": _clean(item.get("desc", ""))[:600],
+                "venue": source["venue"],
+                "source": source["name"],
+            })
+    return events
+
+
+def fetch_hkma(source):
+    """HK Museum of Art ships <li class='event-item'> cards with data-start/data-end."""
+    resp = requests.get(source["url"], headers=HEADERS, timeout=TIMEOUT)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    events = []
+    for li in soup.find_all("li", class_="event-item"):
+        title_tag = li.find(class_="h3")
+        if not title_tag:
+            continue
+        link = li.find("a", href=True)
+        href = link["href"] if link else source["url"]
+        if href.startswith("/"):
+            href = "https://hk.art.museum" + href
+        events.append({
+            "title": title_tag.get_text(strip=True),
+            "url": href,
+            "start": li.get("data-start", ""),
+            "end": li.get("data-end", ""),
+            "description": "",
+            "venue": source["venue"],
+            "source": source["name"],
+        })
+    return events
+
+
 def _clean(text):
     return re.sub(r"<[^>]+>", " ", re.sub(r"\s+", " ", str(text))).strip()
 
@@ -160,6 +212,8 @@ FETCHERS = {
     "ics": fetch_ics,
     "rss": fetch_rss,
     "taikwun": fetch_taikwun,
+    "hkpm": fetch_hkpm,
+    "hkma": fetch_hkma,
 }
 
 

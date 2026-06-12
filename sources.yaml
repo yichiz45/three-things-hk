@@ -18,6 +18,16 @@ sources:
     url: https://www.taikwun.hk/en/programme
     venue: "Tai Kwun, Central"
 
+  - name: Hong Kong Palace Museum
+    type: hkpm
+    url: https://www.hkpm.org.hk/en/exhibition
+    venue: "HKPM, West Kowloon"
+
+  - name: Hong Kong Museum of Art
+    type: hkma
+    url: https://hk.art.museum/en/web/ma/exhibitions-and-events.html
+    venue: "HKMA, Tsim Sha Tsui"
+
   # - name: West Kowloon Cultural District
   #   type: jsonld
   #   url: https://www.westkowloon.hk/en/whats-on
