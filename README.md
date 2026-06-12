@@ -16,10 +16,10 @@ sources.yaml ──► scripts/fetch.py ──► data/events.json
                  scripts/curate.py ──► data/shortlist.json
                                           │   (machine drafts ~15 candidates)
                           editor, weekly  ▼   (~10 minutes, GitHub web editor)
-                                     site/picks.json
+                                     docs/picks.json
                                           │
                           GitHub Pages    ▼
-                                     site/index.html
+                                     docs/index.html
 ```
 
 ## Setup (one-time, ~15 minutes)
@@ -27,7 +27,7 @@ sources.yaml ──► scripts/fetch.py ──► data/events.json
 1. **Create a GitHub repo** and push this folder.
 2. **Add the API key**: repo → Settings → Secrets and variables → Actions →
    New repository secret → name `ANTHROPIC_API_KEY`.
-3. **Enable Pages**: Settings → Pages → Deploy from branch → branch `main`, folder `/site`.
+3. **Enable Pages**: Settings → Pages → Deploy from branch → branch `main`, folder `/docs`.
 4. **Test the pipeline**: Actions tab → "Weekly fetch & curate" → Run workflow.
    Check `data/shortlist.json` after it finishes.
 
@@ -37,7 +37,7 @@ It then runs every Monday at 10:00 HKT automatically.
 
 1. Monday morning: open `data/shortlist.json` — the machine's ~15 candidates with draft blurbs.
 2. Pick three. Rewrite the blurbs in your own voice (the drafts are scaffolding, not copy).
-3. Edit `site/picks.json` in the GitHub web editor: update `week_of`, bump `issue`, paste your picks. Overflow weeks: put extra items in the optional `more` array — they render as a compact list under the three tickets.
+3. Edit `docs/picks.json` in the GitHub web editor: update `week_of`, bump `issue`, paste your picks. Overflow weeks: put extra items in the optional `more` array — they render as a compact list under the three tickets.
 4. Commit. The site updates itself.
 
 ## Local run

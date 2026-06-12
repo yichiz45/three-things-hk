@@ -97,7 +97,7 @@ def main():
     with open(ROOT / "data" / "shortlist.json", "w") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
     print(f"Wrote {len(shortlist)} candidates → data/shortlist.json")
-    print("Editor: pick three, write/adjust blurbs, update site/picks.json")
+    print("Editor: pick three, write/adjust blurbs, update docs/picks.json")
 
 
 if __name__ == "__main__":
