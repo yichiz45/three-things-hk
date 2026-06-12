@@ -126,11 +126,41 @@ def fetch_rss(source):
     return events
 
 
+def fetch_taikwun(source):
+    """Tai Kwun ships programme cards as static HTML: <a class='programme-block'>."""
+    resp = requests.get(source["url"], headers=HEADERS, timeout=TIMEOUT)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    events = []
+    for block in soup.find_all("a", class_="programme-block"):
+        title_tag = block.find("h2")
+        if not title_tag:
+            continue
+        date_tag = block.find("span", class_="time")
+        venue_tag = block.find_all("span", class_="venue")
+        venue_text = venue_tag[0].get_text(" ", strip=True) if venue_tag else ""
+        events.append({
+            "title": title_tag.get_text(strip=True),
+            "url": block.get("href", source["url"]),
+            "start": date_tag.get_text(" ", strip=True) if date_tag else "",
+            "end": "",
+            "description": "",
+            "venue": f"{source['venue']} — {venue_text}" if venue_text else source["venue"],
+            "source": source["name"],
+        })
+    return events
+
+
 def _clean(text):
     return re.sub(r"<[^>]+>", " ", re.sub(r"\s+", " ", str(text))).strip()
 
 
-FETCHERS = {"jsonld": fetch_jsonld, "ics": fetch_ics, "rss": fetch_rss}
+FETCHERS = {
+    "jsonld": fetch_jsonld,
+    "ics": fetch_ics,
+    "rss": fetch_rss,
+    "taikwun": fetch_taikwun,
+}
 
 
 def main():
