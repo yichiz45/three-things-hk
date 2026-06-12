@@ -3,39 +3,39 @@
   "issue": 1,
   "picks": [
     {
-      "title": "Example: Picasso for Asia — A Conversation",
-      "venue": "M+, West Kowloon",
-      "dates": "Through 13 July",
-      "url": "https://www.mplus.org.hk/",
-      "blurb": "Replace this with your real pick. The blurb is one sentence: what it is, and the judgment only you would make about it."
-    },
-    {
-      "title": "Example: Breathing Space",
+      "title": "Alicja Kwade: Waiting Pavilions",
       "venue": "Tai Kwun, Central",
-      "dates": "Opens Friday",
-      "url": "https://www.taikwun.hk/",
-      "blurb": "Second pick. Edit this file weekly in the GitHub web editor — ten minutes, phone is fine."
+      "dates": "Through 26 Nov 2026",
+      "url": "https://www.taikwun.hk/en/programme/detail/alicja-kwade-waiting-pavilions/1529",
+      "blurb": "Mirror-and-stone pavilions scattered across the Victorian prison yard, bending one courtyard into several possible ones. The rare public installation that rewards standing still."
     },
     {
-      "title": "Example: Freespace Jazz Series",
-      "venue": "West Kowloon",
-      "dates": "Saturday, 8pm",
-      "url": "https://www.westkowloon.hk/",
-      "blurb": "Third pick. Pull candidates from data/shortlist.json; keep, rewrite, or ignore the machine's drafts."
+      "title": "The Body Transformed: Global Jewellery from the Met",
+      "venue": "Hong Kong Palace Museum, West Kowloon",
+      "dates": "Through 19 Oct 2026",
+      "url": "https://www.hkpm.org.hk/en/exhibition/treasures-of-global-jewellery-from-the-metropolitan-museum-of-art-the-body-transformed",
+      "blurb": "Five millennia of ornament from the Met — Africa, Asia, Europe, the Americas — read as one continuous argument: the body was always the first gallery."
+    },
+    {
+      "title": "Fermata: Hong Kong in Venice",
+      "venue": "Hong Kong Museum of Art, Tsim Sha Tsui",
+      "dates": "Through 22 Nov 2026",
+      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/fermata-hk-in-venice.html",
+      "blurb": "The city's Venice Biennale presentation, restaged at home. What Hong Kong chose to say about itself to Europe, now answering to its toughest audience — locals."
     }
   ],
   "more": [
     {
-      "title": "Example: Hidden Door — open studio weekend",
-      "venue": "Wong Chuk Hang",
-      "dates": "Sat–Sun",
-      "url": "https://example.com"
+      "title": "Ancient Egypt Unveiled: Treasures from Egyptian Museums",
+      "venue": "Hong Kong Palace Museum",
+      "dates": "Through 31 Aug",
+      "url": "https://www.hkpm.org.hk/en/exhibition/ancient-egypt-unveiled-treasures-from-egyptian-museums"
     },
     {
-      "title": "Example: Freespace late-night programme",
-      "venue": "West Kowloon",
-      "dates": "Friday",
-      "url": "https://example.com"
+      "title": "Better Together — Partnering Up for Hong Kong Movies",
+      "venue": "Tai Kwun",
+      "dates": "Opens 23 Jun",
+      "url": "https://www.taikwun.hk/en/programme/detail/better-together-partnering-up-for-hong-kong-movies/1795"
     }
   ]
 }
