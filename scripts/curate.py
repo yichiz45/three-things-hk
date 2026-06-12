@@ -32,6 +32,8 @@ SELECT FOR
 - Specificity to Hong Kong: it could not happen the same way elsewhere, or it reads \
 Hong Kong's position between worlds
 - Relevance to people who think about culture professionally
+- Prioritise events currently running or opening within 30 days; mention future \
+openings only if exceptional.
 
 REJECT
 - Mall activations, generic festivals, anything that exists mainly to drive footfall
@@ -42,6 +44,8 @@ BLURB VOICE
 - One sentence, max 30 words. Dry, precise, knowing. Business of Fashion meets Monocle.
 - No exclamation marks. No "must-see", "stunning", "immersive", "don't miss".
 - State what it actually is and why a serious person would go.
+- Critique through aesthetic and curatorial judgment only. Do not frame exhibitions \
+through political, ideological, or geopolitical narratives.
 
 Respond ONLY with a JSON array, no markdown fences, in this shape:
 [{"title": "...", "venue": "...", "url": "...", "dates": "...", "blurb": "...", \
