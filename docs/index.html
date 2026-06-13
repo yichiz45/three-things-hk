@@ -5,15 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Three Things — Hong Kong</title>
 <meta name="description" content="Three things worth your time in Hong Kong this week. Gathered by algorithm, curated by taste.">
-
-<!-- Open Graph: makes shared links look good in WhatsApp / iMessage / Slack / LinkedIn -->
 <meta property="og:title" content="Three Things — Hong Kong">
 <meta property="og:description" content="What is actually worth your time in this city this week. Gathered by algorithm, curated by taste. No boring things. Ever.">
 <meta property="og:image" content="https://3thingshk.vercel.app/og.png">
 <meta property="og:url" content="https://3thingshk.vercel.app">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -79,14 +76,14 @@
     max-width:52ch; padding-bottom:40px;
   }
 
-  /* ---- ticket entry animation ---- */
+  /* ---- ticket with right tear strip ---- */
   .ticket{
+    display:flex;
     border:1px solid var(--ink);
     border-radius:14px;
     overflow:hidden;
     margin-bottom:26px;
     background:#faf8f2;
-    position:relative;
     opacity:0;
     transform:translateY(30px);
     animation:slideIn .5s ease-out forwards;
@@ -97,6 +94,8 @@
   @keyframes slideIn{
     to{ opacity:1; transform:translateY(0); }
   }
+
+  .ticket-main{ flex:1; min-width:0; }
 
   .stub{
     display:flex; justify-content:space-between; align-items:flex-end;
@@ -129,21 +128,34 @@
   }
   .blurb{ font-size:14px; line-height:1.75; max-width:58ch; }
 
-  /* ---- stub is the tear-off: clickable for sharing ---- */
-  .stub{
+  /* ---- right tear strip ---- */
+  .tear{
+    width:40px; flex-shrink:0;
+    border:none;
+    border-left:2px dashed var(--ink);
+    background:transparent;
     cursor:pointer;
-    user-select:none;
+    display:flex; align-items:center; justify-content:center;
+    writing-mode:vertical-rl;
+    font-family:"Silkscreen", monospace;
+    font-size:10px; letter-spacing:.15em; text-transform:uppercase;
+    color:var(--grey);
+    transition:background .2s, color .2s;
     -webkit-user-select:none;
-    transition:filter .15s;
+    user-select:none;
   }
-  .stub:hover{ filter:brightness(1.08); }
-  .stub:active{ animation:tearPulse .3s ease-out; }
-  @keyframes tearPulse{
-    0%{ transform:translateY(0); }
-    30%{ transform:translateY(-3px); }
-    100%{ transform:translateY(0); }
+  .tear:hover{
+    background:rgba(0,0,0,.04);
+    color:var(--ink);
   }
-  .stub .scissors{ opacity:.7; margin-left:6px; }
+  .tear:active{
+    background:rgba(0,0,0,.08);
+  }
+  .tear.torn{
+    background:var(--ink);
+    color:var(--paper);
+    transition:background .15s;
+  }
 
   /* ---- toast ---- */
   .toast{
@@ -209,6 +221,7 @@
     .ticket-body{ padding:16px 14px 18px; }
     .ticket h2{ font-size:18px; }
     .blurb{ font-size:13px; line-height:1.7; }
+    .tear{ width:32px; font-size:9px; }
     .more-head{ font-size:13px; }
     .more-list li{ flex-direction:column; gap:2px; padding:10px 2px; }
     .more-list .v{ text-align:left; }
@@ -262,15 +275,18 @@
 
     main.innerHTML = data.picks.map((p, i) => `
       <article class="ticket">
-        <div class="stub" data-idx="${i}" role="button" tabindex="0" aria-label="Share: ${esc(p.title)}">
-          <span>Admit one · This week's pick</span>
-          <span class="no">${String(i + 1).padStart(2, '0')}<span class="scissors"> ✂</span></span>
+        <div class="ticket-main">
+          <div class="stub">
+            <span>Admit one · This week's pick</span>
+            <span class="no">${String(i + 1).padStart(2, '0')}</span>
+          </div>
+          <div class="ticket-body">
+            <p class="meta">${esc(p.venue)}${p.dates ? ' · ' + esc(p.dates) : ''}</p>
+            <h2><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h2>
+            <p class="blurb">${esc(p.blurb)}</p>
+          </div>
         </div>
-        <div class="ticket-body">
-          <p class="meta">${esc(p.venue)}${p.dates ? ' · ' + esc(p.dates) : ''}</p>
-          <h2><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h2>
-          <p class="blurb">${esc(p.blurb)}</p>
-        </div>
+        <button class="tear" data-idx="${i}" aria-label="Share: ${esc(p.title)}">✂ share</button>
       </article>`).join('');
 
     if (Array.isArray(data.more) && data.more.length) {
@@ -287,22 +303,34 @@
         </section>`);
     }
 
-    // Share: tap the stub (tear-off) to share
+    // Share: click the right tear strip
     main.addEventListener('click', async (e) => {
-      const stub = e.target.closest('.stub[data-idx]');
-      if (!stub) return;
-      const pick = picksData[stub.dataset.idx];
+      const btn = e.target.closest('.tear');
+      if (!btn) return;
+      const pick = picksData[btn.dataset.idx];
       if (!pick) return;
 
       const text = `${pick.title} — ${pick.blurb}\n→ ${pick.url}`;
-      const shareData = {
-        title: pick.title,
-        text: `${pick.title} — ${pick.blurb}`,
-        url: pick.url,
-      };
+
+      // Visual feedback: strip goes dark
+      btn.classList.add('torn');
+      btn.textContent = '✓';
+      setTimeout(() => {
+        btn.classList.remove('torn');
+        btn.textContent = '✂ share';
+      }, 1800);
 
       if (navigator.share) {
-        try { await navigator.share(shareData); } catch {}
+        try {
+          await navigator.share({
+            title: pick.title,
+            text: `${pick.title} — ${pick.blurb}`,
+            url: pick.url,
+          });
+          showToast('Shared');
+        } catch {
+          // user cancelled — strip reverts on its own
+        }
       } else {
         try {
           await navigator.clipboard.writeText(text);
