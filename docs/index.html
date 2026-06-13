@@ -114,7 +114,6 @@
   .ticket-body{
     padding:20px 18px 22px;
     border-top:1px dashed var(--ink);
-    position:relative;
   }
   .meta{
     font-size:10px; letter-spacing:.14em; text-transform:uppercase;
@@ -123,7 +122,6 @@
   .ticket h2{
     font-size:clamp(18px,3vw,24px); font-weight:700;
     letter-spacing:-.01em; line-height:1.3; margin-bottom:10px;
-    padding-right:40px;
   }
   .ticket h2 a{ color:inherit; text-decoration:none; }
   .ticket h2 a:hover, .ticket h2 a:focus-visible{
@@ -131,41 +129,21 @@
   }
   .blurb{ font-size:14px; line-height:1.75; max-width:58ch; }
 
-  /* ---- tear-off share tab ---- */
-  .share-tab{
-    position:absolute; top:0; right:0;
-    width:38px; height:100%;
-    border:none; background:transparent;
+  /* ---- stub is the tear-off: clickable for sharing ---- */
+  .stub{
     cursor:pointer;
-    border-left:1px dashed var(--hairline);
-    display:flex; align-items:center; justify-content:center;
-    transition:background .15s;
+    user-select:none;
+    -webkit-user-select:none;
+    transition:filter .15s;
   }
-  .share-tab:hover, .share-tab:focus-visible{
-    background:rgba(0,0,0,.04);
-  }
-  .share-tab:active{
-    animation:tearPulse .3s ease-out;
-  }
+  .stub:hover{ filter:brightness(1.08); }
+  .stub:active{ animation:tearPulse .3s ease-out; }
   @keyframes tearPulse{
-    0%{ transform:translateX(0); }
-    30%{ transform:translateX(4px); }
-    100%{ transform:translateX(0); }
+    0%{ transform:translateY(0); }
+    30%{ transform:translateY(-3px); }
+    100%{ transform:translateY(0); }
   }
-  .share-tab svg{
-    width:16px; height:16px;
-    opacity:.35; transition:opacity .15s;
-  }
-  .share-tab:hover svg{ opacity:.7; }
-  .share-tab .tip{
-    position:absolute; right:46px; top:50%; transform:translateY(-50%);
-    font-size:9px; letter-spacing:.1em; text-transform:uppercase;
-    color:var(--grey); white-space:nowrap;
-    opacity:0; transition:opacity .15s;
-    pointer-events:none;
-    font-family:"Space Mono", monospace;
-  }
-  .share-tab:hover .tip{ opacity:1; }
+  .stub .scissors{ opacity:.7; margin-left:6px; }
 
   /* ---- toast ---- */
   .toast{
@@ -229,10 +207,8 @@
     .stub{ padding:10px 14px; font-size:9px; }
     .stub .no{ font-size:18px; }
     .ticket-body{ padding:16px 14px 18px; }
-    .ticket h2{ font-size:18px; padding-right:36px; }
+    .ticket h2{ font-size:18px; }
     .blurb{ font-size:13px; line-height:1.7; }
-    .share-tab{ width:32px; }
-    .share-tab .tip{ display:none; }
     .more-head{ font-size:13px; }
     .more-list li{ flex-direction:column; gap:2px; padding:10px 2px; }
     .more-list .v{ text-align:left; }
@@ -286,22 +262,14 @@
 
     main.innerHTML = data.picks.map((p, i) => `
       <article class="ticket">
-        <div class="stub">
+        <div class="stub" data-idx="${i}" role="button" tabindex="0" aria-label="Share: ${esc(p.title)}">
           <span>Admit one · This week's pick</span>
-          <span class="no">${String(i + 1).padStart(2, '0')}</span>
+          <span class="no">${String(i + 1).padStart(2, '0')}<span class="scissors"> ✂</span></span>
         </div>
         <div class="ticket-body">
           <p class="meta">${esc(p.venue)}${p.dates ? ' · ' + esc(p.dates) : ''}</p>
           <h2><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h2>
           <p class="blurb">${esc(p.blurb)}</p>
-          <button class="share-tab" data-idx="${i}" aria-label="Share this pick" title="Tear off & share">
-            <span class="tip">Tear & share</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/>
-              <polyline points="16 6 12 2 8 6"/>
-              <line x1="12" y1="2" x2="12" y2="15"/>
-            </svg>
-          </button>
         </div>
       </article>`).join('');
 
@@ -319,11 +287,11 @@
         </section>`);
     }
 
-    // Share handlers
+    // Share: tap the stub (tear-off) to share
     main.addEventListener('click', async (e) => {
-      const btn = e.target.closest('.share-tab');
-      if (!btn) return;
-      const pick = picksData[btn.dataset.idx];
+      const stub = e.target.closest('.stub[data-idx]');
+      if (!stub) return;
+      const pick = picksData[stub.dataset.idx];
       if (!pick) return;
 
       const text = `${pick.title} — ${pick.blurb}\n→ ${pick.url}`;
