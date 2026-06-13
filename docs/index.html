@@ -146,6 +146,26 @@
     opacity:.85;
   }
   :focus-visible{ outline:2px solid var(--led); outline-offset:3px; }
+
+  /* ---- mobile ---- */
+  @media (max-width:600px){
+    body{ padding:10px; }
+    .card{ border-radius:16px; padding:20px 16px; }
+    .topline{ font-size:9px; gap:6px; padding-bottom:14px; }
+    .brand{ font-size:11px; }
+    .display{ font-size:22px; line-height:1.35; padding:28px 0 10px; }
+    .standfirst{ font-size:12px; padding-bottom:28px; }
+    .stub{ padding:10px 14px; font-size:9px; }
+    .stub .no{ font-size:18px; }
+    .ticket-body{ padding:16px 14px 18px; }
+    .ticket h2{ font-size:18px; }
+    .blurb{ font-size:13px; line-height:1.7; }
+    .more-head{ font-size:13px; }
+    .more-list li{ flex-direction:column; gap:2px; padding:10px 2px; }
+    .more-list .v{ text-align:left; }
+    footer{ font-size:9px; gap:10px; }
+    .barcode{ height:20px; flex-basis:80px; }
+  }
 </style>
 </head>
 <body>
