@@ -1,101 +1,101 @@
 {
-  "curated_at": "2026-06-22T07:25:24.338650+00:00",
+  "curated_at": "2026-06-29T06:48:52.046882+00:00",
   "candidates": [
     {
       "title": "Anne Imhof",
       "venue": "Tai Kwun, Central — JC Contemporary",
       "url": "https://www.taikwun.hk/en/programme/detail/anne-imhof/1776",
-      "dates": "26 Sep 2026 - 3 Jan 2027",
-      "blurb": "German performance artist brings her durational, operatic installations to Hong Kong's former colonial prison complex.",
-      "why_shortlisted": "major contemporary artist, site specificity"
+      "dates": "25 Sep 2026 - 3 Jan 2027",
+      "blurb": "Major institutional showing of Imhof's durational performance-installation work in Asia.",
+      "why_shortlisted": "rare Asia presentation of significant artist"
     },
     {
       "title": "Alicja Kwade: Waiting Pavilions",
       "venue": "Tai Kwun, Central — Prison Yard",
       "url": "https://www.taikwun.hk/en/programme/detail/alicja-kwade-waiting-pavilions/1529",
       "dates": "20 Dec 2024 - 26 Nov 2026",
-      "blurb": "Conceptual sculptor places temporary structures in the prison yard, questioning space, time, and perception through material intervention.",
-      "why_shortlisted": "institutional-grade contemporary, site engagement"
+      "blurb": "Site-specific sculpture in the prison yard tests Kwade's perceptual architectures against colonial infrastructure.",
+      "why_shortlisted": "site-specificity meets institutional critique"
     },
     {
       "title": "Treasures of Global Jewellery from The Metropolitan Museum of Art: The Body Transformed",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/treasures-of-global-jewellery-from-the-metropolitan-museum-of-art-the-body-transformed",
       "dates": "15 Apr - 19 Oct 2026",
-      "blurb": "Met loans survey jewellery as cultural technology across continents; note the cross-collection ambition rather than single-culture focus.",
-      "why_shortlisted": "Met partnership, thematic breadth"
+      "blurb": "Met loan exhibition on jewellery as body modification, strong curatorial premise.",
+      "why_shortlisted": "serious museological premise from major lender"
     },
     {
       "title": "Ancient Egypt Unveiled: Treasures from Egyptian Museums",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/ancient-egypt-unveiled-treasures-from-egyptian-museums",
       "dates": "20 Nov 2025 - 31 Aug 2026",
-      "blurb": "Palace Museum positions itself as hub for non-Chinese antiquity, bringing Egyptian artefacts to Asia's newest imperial showcase.",
-      "why_shortlisted": "institutional positioning, curatorial ambition"
+      "blurb": "Direct loans from Egyptian state collections, rare institutional access outside Cairo.",
+      "why_shortlisted": "uncommon bilateral cultural diplomacy"
+    },
+    {
+      "title": "Joyful Encounters: The Connoisseurship and Art of Wong Kwan Shut",
+      "venue": "HKPM, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/joyful-encounters-the-connoisseurship-and-art-of-wong-kwan-shut",
+      "dates": "13 Jun - 23 Nov 2026",
+      "blurb": "First institutional survey of a Hong Kong literati painter whose work bridges Lingnan and modern practices.",
+      "why_shortlisted": "locally significant artist, underexamined"
     },
     {
       "title": "A History of China in Silk: The Chris Hall Collection at the Hong Kong Palace Museum",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/a-history-of-china-in-silk-the-chris-hall-collection-at-the-hong-kong-palace-museum",
       "dates": "1 Oct 2025 - 4 May 2026",
-      "blurb": "Private Western collection of Chinese textiles enters public view, reflecting Hong Kong's role as market and archive.",
-      "why_shortlisted": "private-to-public, collector culture"
+      "blurb": "Private collection presentation tracing Chinese dynastic history through textile production and trade.",
+      "why_shortlisted": "material culture read through collector's lens"
     },
     {
-      "title": "Heavenly Horses: Masterpieces from the Palace Museum",
-      "venue": "HKPM, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/heavenly-horses-masterpieces-from-the-palace-museum",
-      "dates": "20 Mar 2026 - 17 Mar 2027",
-      "blurb": "Beijing loans equestrian art spanning dynasties; read as soft power through cultural patrimony and zoological iconography.",
-      "why_shortlisted": "Beijing relationship, thematic coherence"
+      "title": "Proudly from Canton: The Muwen Tang Collection of Cantonese and Export Art",
+      "venue": "HKMA, Tsim Sha Tsui",
+      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/proudly-from-canton.html",
+      "dates": "29 May 2026 onwards",
+      "blurb": "Survey of export porcelain and Canton trade painting from a major private collection.",
+      "why_shortlisted": "export trade, Hong Kong's mercantile lineage"
     },
     {
       "title": "Blooming: The Art of Gardens in East and West",
       "venue": "HKMA, Tsim Sha Tsui",
       "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/blooming-the-art-of-gardens-in-east-and-west.html",
       "dates": "24 Apr - 29 Jul 2026",
-      "blurb": "Comparative garden aesthetics through painting and design, interrogating landscape as cultural construct across traditions.",
-      "why_shortlisted": "cross-cultural curatorial lens"
+      "blurb": "Comparative exhibition on garden aesthetics across traditions, anchored in painting and spatial design.",
+      "why_shortlisted": "clear comparative curatorial frame"
     },
     {
       "title": "Fermata: Hong Kong in Venice",
       "venue": "HKMA, Tsim Sha Tsui",
       "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/fermata-hk-in-venice.html",
       "dates": "9 May - 22 Nov 2026",
-      "blurb": "Post-Biennale return of Hong Kong's Venice collateral event; observe what the city chooses to represent internationally.",
-      "why_shortlisted": "Venice return, national representation"
-    },
-    {
-      "title": "Proudly from Canton: The Muwen Tang Collection of Cantonese and Export Art",
-      "venue": "HKMA, Tsim Sha Tsui",
-      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/proudly-from-canton.html",
-      "dates": "29 May 2026",
-      "blurb": "Export painting and decorative arts trace Hong Kong's mercantile lineage through Cantonese production for Western markets.",
-      "why_shortlisted": "trade history, regional identity"
+      "blurb": "Collateral event presentation from the 61st Venice Biennale, returned to Hong Kong.",
+      "why_shortlisted": "Venice collateral, local institutional return"
     },
     {
       "title": "Live: Hong Kong Art Exhibition",
       "venue": "HKMA, Tsim Sha Tsui",
       "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/live-hong-kong-art-exhibition.html",
-      "dates": "20 Mar 2026",
-      "blurb": "Institutional survey of contemporary Hong Kong practice; gauge how the state-run museum frames living artists.",
-      "why_shortlisted": "institutional framing of local scene"
+      "dates": "20 Mar 2026 onwards",
+      "blurb": "Periodic survey of contemporary Hong Kong art practices, institutional stocktake.",
+      "why_shortlisted": "recurring local survey, scene snapshot"
     },
     {
       "title": "Open the Box 2026: Pleasant Place with Ryan Villamael",
       "venue": "Tai Kwun, Central — JC Contemporary",
       "url": "https://www.taikwun.hk/en/programme/detail/open-the-box-2026-pleasant-place-with-ryan-villamael/1777",
       "dates": "4 Jul - 2 Aug 2026",
-      "blurb": "Filipino artist known for paper-cut topographies and colonial archive reworking presents new commission.",
-      "why_shortlisted": "Southeast Asian artist, new commission"
+      "blurb": "Filipino artist's site-specific work, part of Tai Kwun's emerging artist commissioning series.",
+      "why_shortlisted": "commissioning programme, regional artist"
     },
     {
-      "title": "Dreamchasers: Stories of Hong Kong Art",
+      "title": "Wu Guanzhong Art Sponsorship Cross-disciplinary Series: Light Entry",
       "venue": "HKMA, Tsim Sha Tsui",
-      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/dreamchasers.html",
-      "dates": "21 Mar 2025 - 14 Jul 2026",
-      "blurb": "Long-duration exhibition constructing a narrative of Hong Kong's art history through museum holdings.",
-      "why_shortlisted": "local art historiography"
+      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/light-entry.html",
+      "dates": "23 Dec 2025 onwards",
+      "blurb": "Cross-disciplinary project using Wu Guanzhong's work as entry point for contemporary light-based practice.",
+      "why_shortlisted": "heritage collection as contemporary prompt"
     }
   ]
 }
