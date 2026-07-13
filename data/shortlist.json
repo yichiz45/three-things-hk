@@ -1,101 +1,109 @@
 {
-  "curated_at": "2026-07-06T06:36:31.820472+00:00",
+  "curated_at": "2026-07-13T05:38:17.638279+00:00",
   "candidates": [
     {
       "title": "Ancient Egypt Unveiled: Treasures from Egyptian Museums",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/ancient-egypt-unveiled-treasures-from-egyptian-museums",
       "dates": "20 Nov 2025 – 31 Aug 2026",
-      "blurb": "Egyptian state collections on loan to Hong Kong, a diplomatic gesture made legible through artefact typology rather than cultural translation.",
-      "why_shortlisted": "rare institutional exchange"
+      "blurb": "Egyptian state museums lend material rarely seen outside Cairo; a geopolitical hedge packaged as Pharaonic splendour.",
+      "why_shortlisted": "rare international loan precedent"
     },
     {
       "title": "The Hong Kong Jockey Club Series: Treasures of the Mughal Court from the Victoria and Albert Museum",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-treasures-of-the-mughal-court-from-the-victoria-and-albert-museum",
       "dates": "6 Aug 2025 – 23 Feb 2026",
-      "blurb": "V&A lends Mughal court objects to a museum that replicates European blockbuster models on Chinese institutional infrastructure.",
-      "why_shortlisted": "institutional form vs content"
+      "blurb": "V&A loans Mughal miniatures and jade to a city with deep South Asian commercial ties but little institutional memory.",
+      "why_shortlisted": "colonial archive meets postcolonial positioning"
     },
     {
       "title": "Wonders of Imperial Carpets: Masterpieces from the Museum of Islamic Art, Doha",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/wonders-of-imperial-carpets-masterpieces-from-the-museum-of-islamic-art-doha",
       "dates": "18 Jun – 6 Oct 2025",
-      "blurb": "Doha's Islamic Art Museum rotates its holdings through Asia's newest soft-power venue; format reveals collecting philosophy more than textiles.",
-      "why_shortlisted": "Gulf-Asia cultural circuit"
+      "blurb": "Doha's MIA loans Safavid and Ottoman textiles, underscoring Hong Kong's evolving role as neutral ground for Gulf cultural diplomacy.",
+      "why_shortlisted": "Gulf-Asia museum corridor"
+    },
+    {
+      "title": "A Movable Feast: The Culture of Food and Drink in China",
+      "venue": "HKPM, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/a-movable-feast-the-culture-of-food-and-drink-in-china",
+      "dates": "19 Mar – 18 Jun 2025",
+      "blurb": "Palace Museum ceramics and scrolls reframe banquet ritual; arrives as Hong Kong reconsiders its own food heritage amid gentrification.",
+      "why_shortlisted": "timely thematic resonance"
     },
     {
       "title": "The Forbidden City and The Palace of Versailles: China-France Cultural Encounters in the Seventeenth and Eighteenth Centuries",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/the-forbidden-city-and-the-palace-of-versailles-china-france-cultural-encounters-in-the-seventeenth-and-eighteenth-centuries",
       "dates": "18 Dec 2024 – 4 May 2025",
-      "blurb": "Versailles meets the Forbidden City in a joint production calibrated for symmetry rather than surprise.",
-      "why_shortlisted": "diplomatic exhibition logic"
-    },
-    {
-      "title": "Alicja Kwade: Waiting Pavilions",
-      "venue": "Tai Kwun, Central",
-      "url": "https://www.taikwun.hk/en/programme/detail/alicja-kwade-waiting-pavilions/1529",
-      "dates": "20 Dec 2024 – 26 Nov 2026",
-      "blurb": "Kwade's sculptural pavilions installed in a former colonial prison yard; phenomenology strained through heritage adaptive reuse.",
-      "why_shortlisted": "site-specific tension"
-    },
-    {
-      "title": "Anne Imhof",
-      "venue": "Tai Kwun, Central",
-      "url": "https://www.taikwun.hk/en/programme/detail/anne-imhof/1776",
-      "dates": "25 Sep 2026 – 3 Jan 2027",
-      "blurb": "Imhof's durational performance work programmed into a heritage complex optimised for commercial flow.",
-      "why_shortlisted": "format vs venue mismatch"
-    },
-    {
-      "title": "Proudly from Canton: The Muwen Tang Collection of Cantonese and Export Art",
-      "venue": "HKMA, Tsim Sha Tsui",
-      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/proudly-from-canton.html",
-      "dates": "From 29 May 2026",
-      "blurb": "Private collection of Cantonese export art surfaces regional production networks often elided by Beijing-centric narratives.",
-      "why_shortlisted": "southern Chinese identity"
-    },
-    {
-      "title": "Blooming: The Art of Gardens in East and West",
-      "venue": "HKMA, Tsim Sha Tsui",
-      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/blooming-the-art-of-gardens-in-east-and-west.html",
-      "dates": "24 Apr – 29 Jul 2026",
-      "blurb": "Comparative garden aesthetics staged in a city where land itself is the rarest luxury medium.",
-      "why_shortlisted": "thematic resonance with HK context"
-    },
-    {
-      "title": "Fermata: Hong Kong in Venice Collateral Event of the 61st International Art Exhibition – La Biennale di Venezia",
-      "venue": "HKMA, Tsim Sha Tsui",
-      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/fermata-hk-in-venice.html",
-      "dates": "9 May – 22 Nov 2026",
-      "blurb": "Hong Kong's Venice collateral project re-shown locally, testing whether international art gestures translate without the Giardini scaffolding.",
-      "why_shortlisted": "return loop of biennale work"
-    },
-    {
-      "title": "Live: Hong Kong Art Exhibition",
-      "venue": "HKMA, Tsim Sha Tsui",
-      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/live-hong-kong-art-exhibition.html",
-      "dates": "From 20 Mar 2026",
-      "blurb": "Institutional survey of Hong Kong art practice, annually restaged with rotating loans from the permanent collection.",
-      "why_shortlisted": "recurring curatorial exercise"
-    },
-    {
-      "title": "Dreamchasers: Stories of Hong Kong Art",
-      "venue": "HKMA, Tsim Sha Tsui",
-      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/dreamchasers.html",
-      "dates": "21 Mar 2025 – 14 Jul 2026",
-      "blurb": "Extended run of local art histories curated through individual artists' biographies rather than movements.",
-      "why_shortlisted": "local canon formation"
+      "blurb": "Jesuit clocks and Kangxi cartography trace early Sino-European exchange, lending historical depth to current Belt-and-Road aesthetics.",
+      "why_shortlisted": "historical precedent for present diplomacy"
     },
     {
       "title": "A History of China in Silk: The Chris Hall Collection at the Hong Kong Palace Museum",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/a-history-of-china-in-silk-the-chris-hall-collection-at-the-hong-kong-palace-museum",
       "dates": "1 Oct 2025 – 4 May 2026",
-      "blurb": "Western collector's silk holdings repatriated through exhibition; private taste positioned as scholarly resource.",
-      "why_shortlisted": "collecting-as-knowledge model"
+      "blurb": "A British collector's textiles trace dynastic transitions; instructive on how private connoisseurship shapes public narrative in Hong Kong.",
+      "why_shortlisted": "collector's intent meets institutional framing"
+    },
+    {
+      "title": "The Hong Kong Jockey Club Series: The Art of Armaments — Qing Dynasty Military Collection from The Palace Museum",
+      "venue": "HKPM, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-the-art-of-armaments-qing-dynasty-military-collection-from-the-palace-museum",
+      "dates": "22 Jan 2025 – 21 Jan 2026",
+      "blurb": "Ceremonial armour and banners presented as decorative art; a carefully apolitical reading of state power.",
+      "why_shortlisted": "curatorial restraint as method"
+    },
+    {
+      "title": "Anne Imhof",
+      "venue": "Tai Kwun, Central — JC Contemporary",
+      "url": "https://www.taikwun.hk/en/programme/detail/anne-imhof/1776",
+      "dates": "25 Sep 2026 – 3 Jan 2027",
+      "blurb": "Imhof's durational intensity lands in a former colonial prison complex; spatial friction guaranteed.",
+      "why_shortlisted": "artist-site friction"
+    },
+    {
+      "title": "Alicja Kwade: Waiting Pavilions",
+      "venue": "Tai Kwun, Central — Prison Yard",
+      "url": "https://www.taikwun.hk/en/programme/detail/alicja-kwade-waiting-pavilions/1529",
+      "dates": "20 Dec 2024 – 26 Nov 2026",
+      "blurb": "Kwade's mirrored structures occupy a prison yard; site-specific only if the architecture is allowed to speak.",
+      "why_shortlisted": "architectural site specificity"
+    },
+    {
+      "title": "Fermata: Hong Kong in Venice — Collateral Event of the 61st International Art Exhibition – La Biennale di Venezia",
+      "venue": "HKMA, Tsim Sha Tsui",
+      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/fermata-hk-in-venice.html",
+      "dates": "9 May – 22 Nov 2026",
+      "blurb": "Hong Kong's Venice collateral event previews at home; a rare chance to assess curatorial ambition before export.",
+      "why_shortlisted": "Venice preview as local test"
+    },
+    {
+      "title": "Blooming: The Art of Gardens in East and West",
+      "venue": "HKMA, Tsim Sha Tsui",
+      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/blooming-the-art-of-gardens-in-east-and-west.html",
+      "dates": "24 Apr – 29 Jul 2026",
+      "blurb": "East-West garden aesthetics compared in a city where public green space is contested political territory.",
+      "why_shortlisted": "garden as contested space"
+    },
+    {
+      "title": "Proudly from Canton: The Muwen Tang Collection of Cantonese and Export Art",
+      "venue": "HKMA, Tsim Sha Tsui",
+      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/proudly-from-canton.html",
+      "dates": "29 May 2026",
+      "blurb": "Export porcelain and trade paintings trace Canton's mercantile lineage; directly relevant to Hong Kong's current identity negotiation.",
+      "why_shortlisted": "regional trade history mirrors present"
+    },
+    {
+      "title": "Dreamchasers: Stories of Hong Kong Art",
+      "venue": "HKMA, Tsim Sha Tsui",
+      "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/dreamchasers.html",
+      "dates": "21 Mar 2025 – 14 Jul 2026",
+      "blurb": "Local artists from the museum's own collection; worth checking for curatorial courage or institutional caution.",
+      "why_shortlisted": "institutional self-definition"
     }
   ]
 }
