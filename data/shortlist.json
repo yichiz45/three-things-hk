@@ -1,109 +1,101 @@
 {
-  "curated_at": "2026-08-10T03:54:54.106417+00:00",
+  "curated_at": "2026-08-17T02:59:24.255275+00:00",
   "candidates": [
     {
       "title": "Anne Imhof: House of Swans",
       "venue": "Tai Kwun, Central — JC Contemporary",
       "url": "https://www.taikwun.hk/en/programme/detail/anne-imhof-house-of-swans/1776",
       "dates": "25 Sep 2026 - 3 Jan 2027",
-      "blurb": "Imhof's first Asia institutional solo adapts her durational performance language to Tai Kwun's former prison architecture.",
-      "why_shortlisted": "Major artist, site-specific context"
-    },
-    {
-      "title": "Treasures of Global Jewellery from The Metropolitan Museum of Art: The Body Transformed",
-      "venue": "HKPM, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/treasures-of-global-jewellery-from-the-metropolitan-museum-of-art-the-body-transformed",
-      "dates": "15 Apr - 19 Oct 2026",
-      "blurb": "Met jewellery survey tracking how adornment shaped identity across cultures, a rare loan bringing New York's holdings to Asia.",
-      "why_shortlisted": "Blue-chip institutional partnership"
-    },
-    {
-      "title": "Ancient Egypt Unveiled: Treasures from Egyptian Museums",
-      "venue": "HKPM, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/ancient-egypt-unveiled-treasures-from-egyptian-museums",
-      "dates": "20 Nov 2025 - 31 Aug 2026",
-      "blurb": "Direct loans from Egyptian state collections, positioning HKPM as a Belt and Road cultural hub beyond its Qing remit.",
-      "why_shortlisted": "Geopolitical soft power play"
-    },
-    {
-      "title": "The Hong Kong Jockey Club Series: Treasures of the Mughal Court from the Victoria and Albert Museum",
-      "venue": "HKPM, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-treasures-of-the-mughal-court-from-the-victoria-and-albert-museum",
-      "dates": "6 Aug 2025 - 23 Feb 2026",
-      "blurb": "V&A Mughal holdings tour Hong Kong, extending the museum's imperial-crossover thesis from Qing-Versailles to Indo-Persian courts.",
-      "why_shortlisted": "Curatorial through-line, major loan"
+      "blurb": "Anne Imhof's durational performance-installation arrives in Asia, reconfiguring Tai Kwun's colonial architecture into a live tableau of endurance and spectacle.",
+      "why_shortlisted": "major European artist, first Asia institutional show"
     },
     {
       "title": "Alicja Kwade: Waiting Pavilions",
       "venue": "Tai Kwun, Central — Prison Yard",
       "url": "https://www.taikwun.hk/en/programme/detail/alicja-kwade-waiting-pavilions/1529",
       "dates": "20 Dec 2024 - 26 Nov 2026",
-      "blurb": "Kwade's mirrored structures occupy Tai Kwun's open-air prison yard, literalising detention as suspended time.",
-      "why_shortlisted": "Site-responsive sculpture, timely theme"
+      "blurb": "Kwade's mirrored pavilions bisect Tai Kwun's former prison yard, turning colonial stone into a study in reflection and perceptual distortion.",
+      "why_shortlisted": "site-specific intervention in heritage precinct"
+    },
+    {
+      "title": "Treasures of Global Jewellery from The Metropolitan Museum of Art: The Body Transformed",
+      "venue": "HKPM, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/treasures-of-global-jewellery-from-the-metropolitan-museum-of-art-the-body-transformed",
+      "dates": "15.04.2026 – 19.10.2026",
+      "blurb": "Met jewellery spanning 5,000 years examined through body modification and ornament, a rare museum loan that sidesteps the usual imperial narrative.",
+      "why_shortlisted": "major Met loan, global jewellery cross-culturally"
+    },
+    {
+      "title": "Ancient Egypt Unveiled: Treasures from Egyptian Museums",
+      "venue": "HKPM, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/ancient-egypt-unveiled-treasures-from-egyptian-museums",
+      "dates": "20.11.2025 – 31.08.2026",
+      "blurb": "Egyptian state collections shown in Hong Kong for the first time, positioning HKPM as a conduit for non-Western antiquities beyond the Beijing axis.",
+      "why_shortlisted": "rare Egyptian state loan to Asia, institutional diplomacy"
+    },
+    {
+      "title": "The Hong Kong Jockey Club Series: Treasures of the Mughal Court from the Victoria and Albert Museum",
+      "venue": "HKPM, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-treasures-of-the-mughal-court-from-the-victoria-and-albert-museum",
+      "dates": "06.08.2025 – 23.02.2026",
+      "blurb": "V&A Mughal holdings read against Beijing imperial craft, a rare institutional dialogue that tests Hong Kong's claim to mediate East-South cultural exchange.",
+      "why_shortlisted": "cross-imperial curatorial premise, V&A collaboration"
     },
     {
       "title": "Fermata: Hong Kong in Venice",
       "venue": "HKMA, Tsim Sha Tsui",
       "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/fermata-hk-in-venice.html",
-      "dates": "9 May - 22 Nov 2026",
-      "blurb": "The 61st Venice Biennale collateral returns home, testing whether Hong Kong's official pavilion has local resonance after the international run.",
-      "why_shortlisted": "Institutional feedback loop, biennial circuit"
+      "dates": "09.05.2026 – 22.11.2026",
+      "blurb": "Hong Kong's Venice Biennale pavilion restaged locally, testing whether the work holds without the validation architecture of the Giardini or Arsenale.",
+      "why_shortlisted": "post-Venice restaging, institutional self-reflexivity"
     },
     {
       "title": "Live: Hong Kong Art Exhibition",
       "venue": "HKMA, Tsim Sha Tsui",
       "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/live-hong-kong-art-exhibition.html",
-      "dates": "20 Mar 2026",
-      "blurb": "Broad-spectrum survey of Hong Kong contemporary practice, a rare institutional stocktake of the city's living artists.",
-      "why_shortlisted": "Local scene survey, institutional survey"
+      "dates": "20.03.2026 onwards",
+      "blurb": "HKMA's survey of local contemporary practice, notable for what it includes and what it diplomatically omits from the city's last decade of cultural production.",
+      "why_shortlisted": "rare Hong Kong contemporary survey from public institution"
     },
     {
       "title": "Proudly from Canton: The Muwen Tang Collection of Cantonese and Export Art",
       "venue": "HKMA, Tsim Sha Tsui",
       "url": "https://hk.art.museum/en/web/ma/exhibitions-and-events/proudly-from-canton.html",
-      "dates": "29 May 2026",
-      "blurb": "Private collection of Cantonese export ware—porcelain, paintings—surfaces Hong Kong's Pearl River Delta trade genealogy.",
-      "why_shortlisted": "Regional identity, private collection debut"
-    },
-    {
-      "title": "A History of China in Silk: The Chris Hall Collection at the Hong Kong Palace Museum",
-      "venue": "HKPM, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/a-history-of-china-in-silk-the-chris-hall-collection-at-the-hong-kong-palace-museum",
-      "dates": "1 Oct 2025 - 4 May 2026",
-      "blurb": "Chris Hall's textile archive maps Chinese silk production across dynasties, tracing aesthetic and technical lineages.",
-      "why_shortlisted": "Specialist private collection, material focus"
+      "dates": "29.05.2026 onwards",
+      "blurb": "Muwen Tang's export-ware collection reframes Canton as the original intercultural workshop, Hong Kong's absent ancestor city finally foregrounded.",
+      "why_shortlisted": "major private collection, Canton as trade-art origin"
     },
     {
       "title": "Joyful Encounters: The Connoisseurship and Art of Wong Kwan Shut",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/joyful-encounters-the-connoisseurship-and-art-of-wong-kwan-shut",
-      "dates": "13 Jun - 23 Nov 2026",
-      "blurb": "Scholar-artist Wong Kwan Shut's collection and practice examined, reviving the literati tradition through a 20th-century Hong Kong lens.",
-      "why_shortlisted": "Local connoisseur, scholarly lineage"
+      "dates": "13.06.2026 – 23.11.2026",
+      "blurb": "Hong Kong merchant-collector Wong Kwan Shut's dual practice as painter and acquirer, a study in literati connoisseurship adapted to mid-century trade capital.",
+      "why_shortlisted": "local collector-artist, Hong Kong literati diaspora"
     },
     {
-      "title": "The Hong Kong Jockey Club Series: A Day in the City — An Experimental Study of Things Across Time",
+      "title": "A History of China in Silk: The Chris Hall Collection at the Hong Kong Palace Museum",
       "venue": "HKPM, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-a-day-in-the-city-an-experimental-study-of-things-across-time",
-      "dates": "31 Jul 2026 - 22 Feb 2027",
-      "blurb": "Object-based study of urban daily life across historical epochs, positioning material culture as ethnographic archive.",
-      "why_shortlisted": "Conceptual curatorial premise"
+      "url": "https://www.hkpm.org.hk/en/exhibition/a-history-of-china-in-silk-the-chris-hall-collection-at-the-hong-kong-palace-museum",
+      "dates": "01.10.2025 – 04.05.2026",
+      "blurb": "Expatriate collector Chris Hall's Chinese textiles, spanning 4,000 years, shown as an alternative social history told through weave structure and trade routes.",
+      "why_shortlisted": "major private textile collection, material culture focus"
+    },
+    {
+      "title": "Brilliance: Ming Dynasty Ceramic Treasures from the Palace Museum, 1368–1644",
+      "venue": "HKPM, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/brilliance-ming-dynasty-ceramic-treasures-from-the-palace-museum-1368-1644",
+      "dates": "10.07.2024 – 02.01.2028",
+      "blurb": "Long-term Ming ceramics installation testing whether extended display duration shifts visitor engagement from blockbuster spectacle to sustained study.",
+      "why_shortlisted": "multi-year installation, alternative display duration"
     },
     {
       "title": "Heavenly Horses: Masterpieces from the Palace Museum",
       "venue": "HKPM, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/heavenly-horses-masterpieces-from-the-palace-museum",
-      "dates": "20 Mar 2026 - 17 Mar 2027",
-      "blurb": "Equestrian art from Beijing's Palace Museum, tracing the horse as military, diplomatic, and aesthetic motif in Chinese painting.",
-      "why_shortlisted": "Thematic depth, Beijing partnership"
-    },
-    {
-      "title": "The Hong Kong Jockey Club Series: The Art of Armaments — Qing Dynasty Military Collection from The Palace Museum",
-      "venue": "HKPM, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-the-art-of-armaments-qing-dynasty-military-collection-from-the-palace-museum",
-      "dates": "22 Jan 2025 - 21 Jan 2026",
-      "blurb": "Qing weaponry as decorative art, examining how imperial martial culture aestheticised violence through craftsmanship.",
-      "why_shortlisted": "Material culture, aesthetic reading of power"
+      "dates": "20.03.2026 – 17.03.2027",
+      "blurb": "Imperial horse portraiture as a proxy for frontier expansion and breeding diplomacy, a politically oblique subject read through aesthetic refinement.",
+      "why_shortlisted": "focused imperial theme, zoological-political subtext"
     }
   ]
 }
